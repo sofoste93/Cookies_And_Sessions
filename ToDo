@@ -1,0 +1,47 @@
+----------------------
+ COOKIES AND SESSIONS
+----------------------
+
+# Work with cookies
+    - Cookie
+        A small string of data stored by the user's web
+        browser.
+
+    - HTTP Request Header
+        GET /first.php HTTP/1.1
+        Host: WW.fakewebsite.org
+        Accept: */*
+
+    - HTTP Response Header Header
+        Content-Type: text/html; charset=utf-8
+        Set-Cookie: admin_id=502
+
+    - Cookies are stored by website domain(or subdomain).
+    - Cookies are sent with every request to the website
+    - Cookies have a maximum size of 4k(~4,000 characters).
+    - Cookies can be viewed, edited, or deleted by the user.
+
+    - URLs/links                        - $_GET
+    - Forms                             - $_POST
+    - Cookies                           - $_COOKIE
+
+    - Cookies are set and sent in the headers.
+    - Headers are sent before any page data.
+    - Cookies must be set before any output,
+      unless output buffering has been turned on.
+            
+=====================================================================
+# Set and read cookie value
+
+=====================================================================
+# Unset cookie values
+
+=====================================================================
+# Work with sessions
+
+=====================================================================
+# Set and read session values
+
+=====================================================================
+# Status messages
+
