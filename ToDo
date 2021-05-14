@@ -66,10 +66,43 @@
     - Use "0" for false and "1" for true instead.
     - Cookies can only be deleted with the same options
       as used for setting the cookie.
-      
 
 =====================================================================
 # Work with sessions
+
+    - Store data in a session file
+    - Store the reference identifier for the session file in a cookie
+    - Retrieval of the session file handled by PHP
+>
+> # Benefits of Sessions
+>
+>    - More storage
+>    - Smaller request sizes
+>    - Conceals data values
+>    - More secure and less hackable
+>
+> # Pitfalls of Sessions
+>
+>    - Slower to access
+>    - Expire when the browser is closed
+>    - Accumulate session files
+>
+>
+> # Common Uses for Sessions
+>
+>    - Frequently referred to data
+>    - User authentication
+>    - Storing data during a redirect
+>
+> # Starting Sessions
+>
+>    - Configure sessions in php.ini file
+>    - http://php.net/manual/en/session.configuration.php
+>    - Can configure session cookie options
+>    - Sessions are turned off by default
+>    - session_start($options)
+>
+
 
 =====================================================================
 # Set and read session values
