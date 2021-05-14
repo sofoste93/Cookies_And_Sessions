@@ -29,9 +29,27 @@
     - Headers are sent before any page data.
     - Cookies must be set before any output,
       unless output buffering has been turned on.
-            
+
 =====================================================================
 # Set and read cookie value
+    - setcookie($name, $value, $expire);
+
+    setcookie(
+        $name, $value, $expire,
+        $path, $domain, $secure,
+        $httponly
+    );
+    - $expires = time() + 60*60*24*14;
+    - setcookie('lang', 'English', $expires);
+
+    setcookie(
+        'lang', 'English', $expires,
+        '/',
+        'mysite.org', false, true
+    );
+    - lang = $_COOKIE['lang'];
+    - $lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : '';
+    - $lang = $_COOKIE['lang'] ?? ''; // PHP > 7.0
 
 =====================================================================
 # Unset cookie values
