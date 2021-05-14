@@ -107,6 +107,28 @@
 =====================================================================
 # Set and read session values
 
+    - $_SESSION['lang'] = 'English';
+    - $lang = $_SESSION['lang'];
+    - $lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : '';
+    - $lang = $_SESSION['lang'] ?? ''; // PHP > 7.0
+    - unset($_SESSION['lang']);
+
 =====================================================================
 # Status messages
+>
+>   - /staff/subjects/ and /staff/pages
+>
+>   - new.php, edit.php, delete.php
+>
+>   - Store a status message in the session before a redirect
+>
+>   - "The subject was created successfully."
+>
+>   - All staff area pages can display status messages.
+>
+>   - If present, retrieve and display the status message.
+>
+>   - Delete the status message from the session after retrieval
+>
+>
 

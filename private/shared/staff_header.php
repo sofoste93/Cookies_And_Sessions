@@ -18,6 +18,8 @@
 
     <navigation>
       <ul>
+          <li><h5>Welcome <?php echo $_SESSION['username'] ?? ''; ?>!</h5></li>
         <li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
+          <li><a href="<?php echo url_for('/staff/logout.php'); ?>">Logout</a></li>
       </ul>
     </navigation>
