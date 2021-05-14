@@ -2,7 +2,7 @@
 
 Building a CMS: How to work with cookies and session in PHP
 
-# Database setting
+# Database Report after connection test
 >
 > DBMS: MariaDB (ver. 10.4.17-MariaDB)
 > 
