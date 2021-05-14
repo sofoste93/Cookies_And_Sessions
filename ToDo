@@ -53,6 +53,20 @@
 
 =====================================================================
 # Unset cookie values
+    // Wrong
+    unset($_COOKIE["admin_id"]);
+
+    // Right: set value to false
+    setcookie($name, false);
+
+    // Right: expire 1 hour agao
+    setcookie($name, $value, (time() - 3600));
+
+    - Avoid boolean values when setting cookies.
+    - Use "0" for false and "1" for true instead.
+    - Cookies can only be deleted with the same options
+      as used for setting the cookie.
+      
 
 =====================================================================
 # Work with sessions
